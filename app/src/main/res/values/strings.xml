@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Musical Structure App - ABND</string>
+    <!-- Main Menu Selections -->
+    <string name="song_menu">Songs</string>
+    <string name="artist_menu">Artists</string>
+    <string name="search_menu">Search</string>
+    <string name="random_menu">Surprise Me</string>
+    <string name="now_playing_menu">Now Playing</string>
+</resources>
