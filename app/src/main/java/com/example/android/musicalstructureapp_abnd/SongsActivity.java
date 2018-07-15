@@ -20,6 +20,9 @@ public class SongsActivity extends AppCompatActivity {
         songs.add(new Song("G-Eazy", " Me, Myself & I"));
         songs.add(new Song("G-Eazy", "I Mean It"));
         songs.add(new Song("Diskopunk", "Antonio America"));
-        songs.add(new Song("Diskopunk", "Fire"))
+        songs.add(new Song("Diskopunk", "Fire"));
+        songs.add(new Song("Grimes", "Kill V. Maim"));
+        songs.add(new Song("The Subways", "Rock & Roll Queen"));
+
     }
 }
