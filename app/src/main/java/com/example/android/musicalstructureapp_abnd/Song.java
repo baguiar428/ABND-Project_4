@@ -6,6 +6,10 @@ public class Song {
 
     private String mSongTitle;
 
+    private int mCoverResourceId = NO_IMAGE_PROVIDED;
+
+    private static final int NO_IMAGE_PROVIDED = -1;
+
     //Constructor
     public Song(String SongArtist, String SongTitle) {
         mSongArtist = SongArtist;
@@ -22,5 +26,15 @@ public class Song {
 
     public String getSongTitle() {
         return mSongTitle;
+    }
+
+    //Get Cover Image ID
+    public int getCoverResourceId() {
+        return mCoverResourceId;
+    }
+
+    //Returns whether or not there is an image for the song
+    public boolean hasImage() {
+        return mCoverResourceId != NO_IMAGE_PROVIDED;
     }
 }
