@@ -2,6 +2,7 @@ package com.example.android.musicalstructureapp_abnd;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -24,5 +25,10 @@ public class SongsActivity extends AppCompatActivity {
         songs.add(new Song("Grimes", "Kill V. Maim"));
         songs.add(new Song("The Subways", "Rock & Roll Queen"));
 
+        SongAdapter adapter = new SongAdapter(this, songs, R.color.colorAccent);
+
+        ListView listView = (ListView) findViewById(R.id.list);
+
+        listView.setAdapter(adapter);
     }
 }
