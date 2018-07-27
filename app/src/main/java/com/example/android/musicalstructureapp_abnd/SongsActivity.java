@@ -15,15 +15,15 @@ public class SongsActivity extends AppCompatActivity {
 
         ArrayList<Song> songs = new ArrayList<Song>();
 
-        songs.add(new Song("Kasabian", "Re-Wired"));
-        songs.add(new Song("Kasabian", "You're in Love with a Psycho"));
-        songs.add(new Song("Kasabian","Eez-eh"));
-        songs.add(new Song("G-Eazy", " Me, Myself & I"));
-        songs.add(new Song("G-Eazy", "I Mean It"));
-        songs.add(new Song("Diskopunk", "Antonio America"));
-        songs.add(new Song("Diskopunk", "Fire"));
-        songs.add(new Song("Grimes", "Kill V. Maim"));
-        songs.add(new Song("The Subways", "Rock & Roll Queen"));
+        songs.add(new Song("Kasabian", "Re-Wired",R.drawable.kasabian_album_cover));
+        songs.add(new Song("Kasabian", "You're in Love with a Psycho",R.drawable.kasabian_album_cover));
+        songs.add(new Song("Kasabian","Eez-eh",R.drawable.kasabian_album_cover));
+        songs.add(new Song("G-Eazy", " Me, Myself & I",R.drawable.g_eazy_album_cover));
+        songs.add(new Song("G-Eazy", "I Mean It",R.drawable.g_eazy_album_cover));
+        songs.add(new Song("Diskopunk", "Antonio America",R.drawable.diskopunk_album_cover));
+        songs.add(new Song("Diskopunk", "Fire",R.drawable.diskopunk_album_cover));
+        songs.add(new Song("Grimes", "Kill V. Maim",R.drawable.grimes_album_cover));
+        songs.add(new Song("The Subways", "Rock & Roll Queen",R.drawable.the_subways_album_cover));
 
         SongAdapter adapter = new SongAdapter(this, songs, R.color.colorAccent);
 

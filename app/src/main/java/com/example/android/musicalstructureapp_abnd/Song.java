@@ -16,6 +16,12 @@ public class Song {
         mSongTitle = SongTitle;
     }
 
+    public Song(String SongArtist, String SongTitle, int coverResourceId) {
+        mSongArtist = SongArtist;
+        mSongTitle = SongTitle;
+        mCoverResourceId = coverResourceId;
+    }
+
     //Get the Song Artist from Song.
 
     public String getSongArtist() {
