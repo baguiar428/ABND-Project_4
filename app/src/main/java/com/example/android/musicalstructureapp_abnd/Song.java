@@ -22,6 +22,12 @@ public class Song {
         mCoverResourceId = coverResourceId;
     }
 
+    //Testing - Delete Block if it doesn't work
+    public Song(String SongArtist, int coverResourceId) {
+        mSongArtist = SongArtist;
+        mCoverResourceId = coverResourceId;
+    }
+
     //Get the Song Artist from Song.
 
     public String getSongArtist() {
