@@ -17,6 +17,10 @@ public class ArtistsActivity extends AppCompatActivity {
         ArrayList<Song> songs = new ArrayList<Song>();
 
         songs.add(new Song("Kasabian", R.drawable.kasabian_album_cover));
+        songs.add(new Song("G-Eazy", R.drawable.g_eazy_album_cover));
+        songs.add(new Song("Diskopunk", R.drawable.diskopunk_album_cover));
+        songs.add(new Song("Grimes", R.drawable.grimes_album_cover));
+        songs.add(new Song("The Subways", R.drawable.the_subways_album_cover));
 
         ArtistAdapter adapter = new ArtistAdapter(this, songs, R.color.colorAccent);
 
