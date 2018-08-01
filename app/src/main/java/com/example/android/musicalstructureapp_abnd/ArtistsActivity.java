@@ -1,5 +1,6 @@
 package com.example.android.musicalstructureapp_abnd;
 
+import android.content.Intent;
 import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,7 +37,8 @@ public class ArtistsActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                Intent artistBioPage = new Intent(ArtistsActivity.this, ArtistBioActivity.class);
+                startActivity(artistBioPage);
             }
         });
     }
