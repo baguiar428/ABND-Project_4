@@ -1,6 +1,6 @@
 package com.example.android.musicalstructureapp_abnd;
 
-public class Song {
+public class Song  {
     //Song title and artist for Song class. Use m for private variables
     private String mSongArtist;
 
@@ -10,26 +10,20 @@ public class Song {
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    //Constructor
-    public Song(String SongArtist, String SongTitle) {
-        mSongArtist = SongArtist;
-        mSongTitle = SongTitle;
-    }
-
+    //Constructor for SongsActivity
     public Song(String SongArtist, String SongTitle, int coverResourceId) {
         mSongArtist = SongArtist;
         mSongTitle = SongTitle;
         mCoverResourceId = coverResourceId;
     }
 
-    //Testing - Delete Block if it doesn't work
+    //Constructor for ArtistsActivity
     public Song(String SongArtist, int coverResourceId) {
         mSongArtist = SongArtist;
         mCoverResourceId = coverResourceId;
     }
 
     //Get the Song Artist from Song.
-
     public String getSongArtist() {
         return mSongArtist;
     }
