@@ -10,6 +10,8 @@ public class Song  {
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    private int mArtistBioId;
+
     //Constructor for SongsActivity
     public Song(String SongArtist, String SongTitle, int coverResourceId) {
         mSongArtist = SongArtist;
@@ -18,9 +20,10 @@ public class Song  {
     }
 
     //Constructor for ArtistsActivity
-    public Song(String SongArtist, int coverResourceId) {
+    public Song(String SongArtist, int coverResourceId, int artistBioId) {
         mSongArtist = SongArtist;
         mCoverResourceId = coverResourceId;
+        mArtistBioId = artistBioId;
     }
 
     //Get the Song Artist from Song.
@@ -43,4 +46,8 @@ public class Song  {
     public boolean hasImage() {
         return mCoverResourceId != NO_IMAGE_PROVIDED;
     }
+
+    //Get the Artist Bio ID from Song.
+    public  int getArtistBioId() {
+        return mArtistBioId;}
 }

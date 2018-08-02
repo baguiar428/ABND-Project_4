@@ -47,7 +47,7 @@ public class ArtistAdapter extends ArrayAdapter<Song> {
                 iconImage.setVisibility(View.GONE);
             }
 
-            // Return the whole list item layout (containing 2 TextViews and an ImageView)
+            // Return the whole list item layout (containing 1 TextView and an ImageView)
             // so that it can be shown in the ListView
             return listItemView;
         }
