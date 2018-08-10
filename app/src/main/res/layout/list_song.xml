@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:paddingLeft="@dimen/image_padding">
 
         <TextView
             android:id="@+id/artist_text_view"

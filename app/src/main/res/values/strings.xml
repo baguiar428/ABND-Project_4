@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Musical Structure App - ABND</string>
+    <string name="app_name">Music Library Browser</string>
     <!-- Main Menu Selections -->
     <string name="song_menu">Songs</string>
     <string name="artist_menu">Artists</string>

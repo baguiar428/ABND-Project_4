@@ -5,13 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-    <!-- Custom Action Bar Theme -->
-    <style name="CustomActionBarTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:titleTextColor">@color/colorAccent</item>
-        <item name="android:subtitleTextColor">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
     </style>
 
 </resources>
