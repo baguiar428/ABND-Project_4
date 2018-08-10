@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="@dimen/song_item_height"
-    android:background="@android:color/holo_green_dark">
+    android:background="@color/colorPrimaryDark">
 
     <ImageView
         android:id="@+id/cover_image"

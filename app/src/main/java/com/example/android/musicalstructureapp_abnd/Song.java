@@ -1,9 +1,6 @@
 package com.example.android.musicalstructureapp_abnd;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
-public class Song implements Parcelable {
+public class Song {
     //Song title and artist for Song class. Use m for private variables
     private String mSongArtist;
 
@@ -23,10 +20,9 @@ public class Song implements Parcelable {
     }
 
     //Constructor for ArtistsActivity
-    public Song(String SongArtist, int coverResourceId, int artistBioId) {
+    public Song(String SongArtist, int coverResourceId) {
         mSongArtist = SongArtist;
         mCoverResourceId = coverResourceId;
-        mArtistBioId = artistBioId;
     }
 
     //Get the Song Artist from Song.
@@ -49,40 +45,4 @@ public class Song implements Parcelable {
     public boolean hasImage() {
         return mCoverResourceId != NO_IMAGE_PROVIDED;
     }
-
-    //Get the Artist Bio ID from Song.
-    public  int getArtistBioId() {
-        return mArtistBioId;}
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(this.mSongArtist);
-        dest.writeString(this.mSongTitle);
-        dest.writeInt(this.mCoverResourceId);
-        dest.writeInt(this.mArtistBioId);
-    }
-
-    protected Song(Parcel in) {
-        this.mSongArtist = in.readString();
-        this.mSongTitle = in.readString();
-        this.mCoverResourceId = in.readInt();
-        this.mArtistBioId = in.readInt();
-    }
-
-    public static final Creator<Song> CREATOR = new Creator<Song>() {
-        @Override
-        public Song createFromParcel(Parcel source) {
-            return new Song(source);
-        }
-
-        @Override
-        public Song[] newArray(int size) {
-            return new Song[size];
-        }
-    };
 }

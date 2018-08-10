@@ -8,33 +8,15 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/songs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/song_menu"/>
-
-    <TextView
         android:id="@+id/artists"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/artist_menu"/>
 
     <TextView
-        android:id="@+id/random"
+        android:id="@+id/songs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/random_menu"/>
-
-    <TextView
-        android:id="@+id/search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/search_menu"/>
-
-    <TextView
-        android:id="@+id/playing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/now_playing_menu"/>
+        android:text="@string/song_menu"/>
 
 </LinearLayout>
