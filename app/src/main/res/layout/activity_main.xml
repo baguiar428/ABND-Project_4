@@ -11,12 +11,20 @@
         android:id="@+id/artists"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/artist_menu"/>
+        android:text="@string/artist_menu"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        />
 
     <TextView
         android:id="@+id/songs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/song_menu"/>
+        android:text="@string/song_menu"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+
+        />
 
 </LinearLayout>
