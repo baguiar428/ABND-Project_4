@@ -23,11 +23,11 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/main_menu_top_bottom_margins"
             android:layout_marginTop="@dimen/main_menu_top_bottom_margins"
-            android:gravity="center_horizontal"
             android:text="@string/artist_menu"
+            android:gravity="center_horizontal"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/colorAccent"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/songs"
